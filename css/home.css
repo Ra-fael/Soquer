@@ -22,3 +22,7 @@
 .divider h2 {
   font-weight: 400;
 }
+
+.content {
+  background: pink;
+}
