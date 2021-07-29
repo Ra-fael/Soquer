@@ -1,0 +1,29 @@
+.menubar {
+  height: 70px;
+  width: 100%;
+  position: fixed;
+
+  padding: 0 10rem;
+
+  color: #ffffff;
+  background: linear-gradient(#000000, #000000a4, #00000077, #ffffff00);
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar ul {
+  list-style: none;
+}
+
+.navbar ul li {
+  display: inline;
+  margin-left: 4rem;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+}
