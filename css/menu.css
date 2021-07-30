@@ -2,15 +2,33 @@
   height: 70px;
   width: 100%;
   position: fixed;
-
+  z-index: 100;
   padding: 0 10rem;
 
   color: #ffffff;
-  background: linear-gradient(#000000, #000000a4, #00000077, #ffffff00);
+  background: linear-gradient(#000000, #000000d0, #0000008e, #ffffff00);
+  opacity: 1;
 
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.menubar::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: #000;
+  z-index: -1;
+  transition: opacity 0.3s linear;
+  opacity: 0;
+}
+
+.scroll::before {
+  opacity: 1;
 }
 
 .navbar ul {
