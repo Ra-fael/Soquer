@@ -24,5 +24,50 @@
 }
 
 .content {
-  background: pink;
+  padding: 10rem;
+}
+
+.content-header {
+  font-size: 3rem;
+}
+
+.spotlight {
+  margin-top: 5rem;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 25%;
+  margin-bottom: 4rem;
+}
+
+.card.gap {
+  margin: 0 12.5%;
+}
+
+.card-img {
+  height: 200px;
+  width: 100%;
+
+  border-radius: 4px;
+
+  background: url(../img/dummy.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.card-info {
+  margin-top: 15px;
+}
+
+.card-info h1 {
+  font-size: 1.8rem;
+}
+
+.card-info h2 {
+  font-size: 1.2rem;
+  font-weight: 300;
 }
