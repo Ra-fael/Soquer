@@ -1,0 +1,46 @@
+.spotlight {
+  margin-top: 5rem;
+
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 350px;
+  margin-bottom: 4rem;
+
+  color: #000;
+  text-decoration: none;
+
+  transition: 200ms;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+}
+
+.card-img {
+  height: 200px;
+  width: 100%;
+
+  border-radius: 4px;
+
+  background: url(../img/dummy.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.card-info {
+  margin-top: 15px;
+}
+
+.card-info h1 {
+  font-size: 1.8rem;
+}
+
+.card-info h2 {
+  font-size: 1.2rem;
+  font-weight: 300;
+}

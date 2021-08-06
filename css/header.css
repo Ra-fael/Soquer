@@ -1,0 +1,26 @@
+.banner {
+  width: 100%;
+  height: 60vh;
+  object-fit: cover;
+}
+
+.divider {
+  transform: translateY(-50%);
+  padding: 32px 56px;
+  float: right;
+  display: block;
+  margin-right: 10rem;
+
+  word-break: break-all;
+
+  color: #fff;
+  background: #222222;
+}
+
+.divider h1 {
+  font-size: 3rem;
+}
+
+.divider h2 {
+  font-weight: 400;
+}
