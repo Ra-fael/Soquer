@@ -27,7 +27,7 @@
 
   border-radius: 4px;
 
-  background: url(../img/dummy.jpg);
+  /*background: url(../img/dummy.jpg);*/
   background-size: cover;
   background-position: center;
 }
