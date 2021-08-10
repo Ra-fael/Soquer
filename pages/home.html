@@ -121,11 +121,31 @@
   </main>
 
   <footer>
-    <p>Feito por André Glatz e Rafael Rodrigues</p>
+    <form action="#" method="get" class="newslatter">
+      <div class="description">
+        <h1>Não perca nenhum lance!</h1>
+        <h2>Se inscreva na nossa newsletter para receber e-mails com conteúdos sobre futebol.</h2>
+      </div>
+
+      <div class="fields">
+        <div class="sub-field">
+          <label>Nome</label>
+          <input type="text" name="name" id="name" placeholder="Ronaldo Silva">
+        </div>
+  
+        <div class="sub-field">
+          <label>Escreva seu melhor e-mail</label>
+          <input type="email" name="email" id="email" placeholder="email@example.com">
+        </div>
+    
+        <button type="submit" id="enviar" disabled>Enviar</button>
+      </div>
+    </form>
   </footer>
 
 
   <script src="../js/menu.js"></script>
+  <script src="../js/newsletter.js"></script>
 </body>
 
 </html>
