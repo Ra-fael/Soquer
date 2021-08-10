@@ -8,17 +8,19 @@
 }
 
 .news-img {
-  height: 100%;
+  height: auto;
   width: 40%;
+  min-height: auto;
 }
 
 .news-content {
   width: 50%;
+  font-size: 1vw;
   text-align: justify;
   word-break: keep-all;
 }
 
 .news-content h1 {
-  font-size: 3rem;
+  font-size: 1.8vw;
   margin-bottom: 30px;
 }

@@ -27,7 +27,7 @@
 
   border-radius: 4px;
 
-  background: url(../img/dummy.jpg);
+  /*background: url(../img/dummy.jpg);*/
   background-size: cover;
   background-position: center;
 }
@@ -37,10 +37,11 @@
 }
 
 .card-info h1 {
-  font-size: 1.8rem;
+  font-size: max(1.4rem, 2vw);
 }
 
 .card-info h2 {
-  font-size: 1.2rem;
+  /*font-size: 1.2rem;*/
+  font-size: max(1rem, 1.2vw);
   font-weight: 300;
 }
