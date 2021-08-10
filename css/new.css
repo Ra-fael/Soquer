@@ -100,14 +100,6 @@ figure {
   width: 100%;
 }
 
-.article-image.is-3by2 {
-  padding-top: 66.6666%;
-}
-
-.article-image.is-16by9 {
-  padding-top: 56.25%;
-}
-
 .article-body {
   display: flex;
   flex: 1;
@@ -149,9 +141,5 @@ figure {
 
   .main-column {
     flex: 3;
-  }
-
-  .nested-column {
-    flex: 2;
   }
 }
