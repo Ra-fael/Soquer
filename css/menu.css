@@ -33,6 +33,16 @@
 
 .navbar ul {
   list-style: none;
+  position: relative;
+}
+
+.menu ul ul {
+  position: absolute;
+  visibility: hidden;
+}
+
+.menu ul li:hover ul {
+  visibility: visible;
 }
 
 .navbar ul li {
