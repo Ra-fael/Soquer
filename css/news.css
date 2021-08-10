@@ -2,9 +2,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-
   padding: 50px;
-  background: brown;
 }
 
 .news-img {
@@ -23,4 +21,10 @@
 .news-content h1 {
   font-size: 1.8vw;
   margin-bottom: 30px;
+}
+
+@media screen and (max-width: 800px) {
+  .news {
+    display: none;
+  }
 }

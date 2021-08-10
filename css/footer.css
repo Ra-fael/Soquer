@@ -1,5 +1,4 @@
 footer {
-  position: fixed;
   width: 100%;
   background: #222;
   color: #fff;
@@ -25,7 +24,7 @@ footer {
 
 .newslatter h2 {
   font-weight: 300;
-  font-size: 1.1rem;
+  font-size: 1rem;
 }
 
 .sub-field {

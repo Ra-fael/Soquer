@@ -1,110 +1,63 @@
-/*Resetando os valores de espaçamento */
-* {
-  margin: 0;
-  padding: 0;
-}
-
-/*Estilizando a nav da classe menu */
-.navbar {
+.menubar {
+  height: 70px;
   width: 100%;
-  height: 50px;
-  background-color: #222;
-  font-family: Arial;
+  position: fixed;
+  z-index: 100;
+  padding: 0 10rem;
+
+  color: #ffffff;
+  background: linear-gradient(#000000, #000000d0, #0000008e, #ffffff00);
+  opacity: 1;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-/*Estilizando as listas */
+.menubar::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: #000;
+  z-index: -1;
+  transition: opacity 0.3s linear;
+  opacity: 0;
+}
+
+.scroll::before {
+  opacity: 1;
+}
+
 .navbar ul {
   list-style: none;
   position: relative;
 }
 
-.navbar ul li {
-  width: 150px;
-  float: left;
-}
-
-.navbar a {
-  padding: 15px;
-  display: block;
-  text-decoration: none;
-  text-align: center;
-  background-color: #222;
-  color: #fff;
-}
-
-.navbar ul ul {
+.menu ul ul {
   position: absolute;
   visibility: hidden;
 }
 
-.navbar ul li:hover ul {
+.menu ul li:hover ul {
   visibility: visible;
 }
 
-.navbar a:hover {
-  background-color: #f4f4f4;
-  color: #555;
+.navbar ul li {
+  display: inline;
+  margin-left: 4rem;
 }
 
-.navbar ul ul li {
-  float: none;
-  border-bottom: solid 1px #ccc;
-}
-
-.navbar ul ul li a {
-  background-color: #069;
-}
-
-/*Criando o label */
-label[for="”bt_menu”"] {
-  padding: 5px;
-  background-color: #222;
+.menubar a {
+  text-decoration: none;
   color: #fff;
-  font-family: Arial;
-  text-align: center;
-  font-size: 30px;
-  cursor: pointer;
-  height: 50px;
+  font-weight: 600;
 }
 
-#bt_menu {
-  display: none;
-}
-
-label[for="”bt_menu”"] {
-  display: none;
-}
-
-/*Deixando o Menu Responsivo */
-@media (max-width: 800px) {
-  label[for="”bt_menu”"] {
-    display: block;
-  }
-
-  #bt_menu:checked ~ .navbar {
-    margin-left: 0;
-  }
-
+@media screen and (max-width: 800px) {
   .navbar {
-    margin-top: 5px;
-    margin-left: -100%;
-    transition: all 0.4s;
-  }
-
-  .navbar ul li {
-    width: 100%;
-    float: none;
-  }
-
-  .navbar ul ul {
-    position: static;
-    overflow: hidden;
-    max-height: 0;
-    transition: all 4s;
-  }
-
-  .navbar ul li:hover ul {
-    height: auto;
-    max-height: 200px;
+    display: none;
   }
 }
